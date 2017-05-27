@@ -2,7 +2,6 @@ package main
 
 import (
 	_ "passapp-engine-api/routers"
-
 	"github.com/astaxie/beego"
 )
 

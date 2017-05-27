@@ -9,8 +9,8 @@ package routers
 
 import (
 	"passapp-engine-api/controllers"
-
 	"github.com/astaxie/beego"
+	"passapp-engine-api/handlers"
 )
 
 func init() {
@@ -31,5 +31,8 @@ func init() {
 			),
 		),
 	)
+
+	ns.Cond(handlers.Jwt)
+
 	beego.AddNamespace(ns)
 }

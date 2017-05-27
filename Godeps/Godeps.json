@@ -47,6 +47,11 @@
 			"ImportPath": "github.com/astaxie/beego/utils",
 			"Comment": "v1.8.3",
 			"Rev": "cab8458c1c4a5a3b4bf5192922be620e6dede15b"
+		},
+		{
+			"ImportPath": "github.com/dgrijalva/jwt-go",
+			"Comment": "v3.0.0-19-g5ce015f",
+			"Rev": "5ce015f7b5c6a994b0db6f07883d38572c28a422"
 		}
 	]
 }
