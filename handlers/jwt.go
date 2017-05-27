@@ -10,8 +10,21 @@ import (
 func init() {
 }
 
-func Jwt(ctx *context.Context) bool {
-		return verify(ctx.Input.Header("Authorization"))
+func Jwt(ctx *context.Context) {
+		var uri string = ctx.Input.URI()
+		if  uri == "/v1/jwt" {
+			return
+		}
+
+		if ctx.Input.Header("Authorization") == "" {
+			ctx.Output.SetStatus(403)
+			ctx.Output.Body([]byte("notAllowed"))
+		}
+
+		if !verify(ctx.Input.Header("Authorization")) {
+			ctx.Output.SetStatus(403)
+			ctx.Output.Body([]byte(ctx.Input.Header("Authorization")))
+		}
 }
 
 func verify(tokenString string) bool {
@@ -33,7 +46,7 @@ func verify(tokenString string) bool {
 		fmt.Println(claims["uid"], claims["nbf"])
 		return true
 	} else {
-		fmt.Println(err)
+		fmt.Println(err)		
 		return false
 	}
 }

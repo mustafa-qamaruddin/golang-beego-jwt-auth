@@ -15,6 +15,12 @@ import (
 
 func init() {
 	ns := beego.NewNamespace("/v1",
+		beego.NSNamespace("/jwt",
+			beego.NSInclude(
+				&controllers.JWTController{},
+			),
+		),
+		beego.NSBefore(handlers.Jwt),
 		beego.NSNamespace("/object",
 			beego.NSInclude(
 				&controllers.ObjectController{},
@@ -25,14 +31,7 @@ func init() {
 				&controllers.UserController{},
 			),
 		),
-		beego.NSNamespace("/jwt",
-			beego.NSInclude(
-				&controllers.JWTController{},
-			),
-		),
 	)
-
-	ns.Cond(handlers.Jwt)
 
 	beego.AddNamespace(ns)
 }
