@@ -1,0 +1,52 @@
+{
+	"ImportPath": "passapp-engine-api",
+	"GoVersion": "go1.7",
+	"GodepVersion": "v79",
+	"Deps": [
+		{
+			"ImportPath": "github.com/astaxie/beego",
+			"Comment": "v1.8.3",
+			"Rev": "cab8458c1c4a5a3b4bf5192922be620e6dede15b"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/config",
+			"Comment": "v1.8.3",
+			"Rev": "cab8458c1c4a5a3b4bf5192922be620e6dede15b"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/context",
+			"Comment": "v1.8.3",
+			"Rev": "cab8458c1c4a5a3b4bf5192922be620e6dede15b"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/context/param",
+			"Comment": "v1.8.3",
+			"Rev": "cab8458c1c4a5a3b4bf5192922be620e6dede15b"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/grace",
+			"Comment": "v1.8.3",
+			"Rev": "cab8458c1c4a5a3b4bf5192922be620e6dede15b"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/logs",
+			"Comment": "v1.8.3",
+			"Rev": "cab8458c1c4a5a3b4bf5192922be620e6dede15b"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/session",
+			"Comment": "v1.8.3",
+			"Rev": "cab8458c1c4a5a3b4bf5192922be620e6dede15b"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/toolbox",
+			"Comment": "v1.8.3",
+			"Rev": "cab8458c1c4a5a3b4bf5192922be620e6dede15b"
+		},
+		{
+			"ImportPath": "github.com/astaxie/beego/utils",
+			"Comment": "v1.8.3",
+			"Rev": "cab8458c1c4a5a3b4bf5192922be620e6dede15b"
+		}
+	]
+}
