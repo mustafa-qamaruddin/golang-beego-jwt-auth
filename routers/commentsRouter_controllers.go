@@ -7,6 +7,14 @@ import (
 
 func init() {
 
+	beego.GlobalControllerRouter["passapp-engine-api/controllers:JWTController"] = append(beego.GlobalControllerRouter["passapp-engine-api/controllers:JWTController"],
+		beego.ControllerComments{
+			Method: "Post",
+			Router: `/`,
+			AllowHTTPMethods: []string{"post"},
+			MethodParams: param.Make(),
+			Params: nil})
+
 	beego.GlobalControllerRouter["passapp-engine-api/controllers:ObjectController"] = append(beego.GlobalControllerRouter["passapp-engine-api/controllers:ObjectController"],
 		beego.ControllerComments{
 			Method: "Post",

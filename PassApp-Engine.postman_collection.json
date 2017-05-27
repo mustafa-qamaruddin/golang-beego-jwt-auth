@@ -5,6 +5,15 @@
 	"order": [],
 	"folders": [
 		{
+			"id": "f2706a7c-2714-7d64-ef57-5f1de8012584",
+			"name": "JWT",
+			"description": "",
+			"order": [
+				"32f31eaf-1b9a-495f-5d33-b2458409b158"
+			],
+			"owner": "1567530"
+		},
+		{
 			"id": "418f35ad-aa17-bec2-fb5b-739773d04b00",
 			"name": "Users",
 			"description": "",
@@ -44,6 +53,25 @@
 			"currentHelper": "normal",
 			"helperAttributes": {},
 			"folder": "418f35ad-aa17-bec2-fb5b-739773d04b00"
+		},
+		{
+			"id": "32f31eaf-1b9a-495f-5d33-b2458409b158",
+			"headers": "",
+			"url": "{{url}}/jwt",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1495912388786,
+			"name": "{{url}}/jwt",
+			"description": "",
+			"collectionId": "76be6d54-0dd8-26fb-18ed-d1f19350bf7a",
+			"responses": [],
+			"rawModeData": "{\n\t\"username\":\"islam.mustafa@integreight.com\",\n\t\"password\":\"secret@2017\"\n}"
 		},
 		{
 			"id": "3f0000d4-ae40-1642-5d07-8d9813246b56",

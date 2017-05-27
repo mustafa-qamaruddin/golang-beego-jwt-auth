@@ -25,6 +25,11 @@ func init() {
 				&controllers.UserController{},
 			),
 		),
+		beego.NSNamespace("/jwt",
+			beego.NSInclude(
+				&controllers.JWTController{},
+			),
+		),
 	)
 	beego.AddNamespace(ns)
 }
