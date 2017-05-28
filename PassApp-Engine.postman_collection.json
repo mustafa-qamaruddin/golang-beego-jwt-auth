@@ -175,24 +175,21 @@
 		},
 		{
 			"id": "e7bac77e-2ded-5126-f6cd-89c0b03e8dac",
-			"headers": "",
+			"headers": "Authorization: {{token}}\n",
 			"url": "{{url}}/user/logout",
-			"pathVariables": {},
 			"preRequestScript": null,
+			"pathVariables": {},
 			"method": "GET",
-			"collectionId": "76be6d54-0dd8-26fb-18ed-d1f19350bf7a",
 			"data": null,
 			"dataMode": "params",
-			"name": "{{url}}/user/logout",
-			"description": "",
-			"descriptionFormat": "html",
-			"time": 1495663897709,
-			"version": 2,
-			"responses": [],
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"folder": "418f35ad-aa17-bec2-fb5b-739773d04b00"
+			"time": 1495927974896,
+			"name": "{{url}}/user/logout",
+			"description": "",
+			"collectionId": "76be6d54-0dd8-26fb-18ed-d1f19350bf7a",
+			"responses": []
 		}
 	]
 }
