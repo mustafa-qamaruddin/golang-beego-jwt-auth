@@ -39,9 +39,13 @@ func (c *AccessController) Post() {
 	if !b {
 		// validation does not pass
 		// print invalid message
+		var errorsList map[string]string = make(map[string]string)
 		for _, err := range valid.Errors {
+			errorsList[err.Key] = err.Message
 			log.Println(err.Key, err.Message)
 		}
+		c.Data["json"] = map[string]map[string]string{"errors" :errorsList}
+		c.ServeJSON()
 	}
 
 	res := models.AddAccess(access)
