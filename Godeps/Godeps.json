@@ -2,6 +2,9 @@
 	"ImportPath": "passapp-engine-api",
 	"GoVersion": "go1.7",
 	"GodepVersion": "v79",
+	"Packages": [
+		"./..."
+	],
 	"Deps": [
 		{
 			"ImportPath": "github.com/astaxie/beego",
@@ -52,6 +55,45 @@
 			"ImportPath": "github.com/dgrijalva/jwt-go",
 			"Comment": "v3.0.0-19-g5ce015f",
 			"Rev": "5ce015f7b5c6a994b0db6f07883d38572c28a422"
+		},
+		{
+			"ImportPath": "github.com/gopherjs/gopherjs/js",
+			"Rev": "6997325cc76f13635f68ad9e1c38544966eb7de2"
+		},
+		{
+			"ImportPath": "github.com/jtolds/gls",
+			"Comment": "v4.2.0-2-g77f1821",
+			"Rev": "77f18212c9c7edc9bd6a33d383a7b545ce62f064"
+		},
+		{
+			"ImportPath": "github.com/smartystreets/assertions",
+			"Comment": "1.6.0-24-gf8459f9",
+			"Rev": "f8459f92181409546d2762c9e9c4bedc23c92d76"
+		},
+		{
+			"ImportPath": "github.com/smartystreets/assertions/internal/go-render/render",
+			"Comment": "1.6.0-24-gf8459f9",
+			"Rev": "f8459f92181409546d2762c9e9c4bedc23c92d76"
+		},
+		{
+			"ImportPath": "github.com/smartystreets/assertions/internal/oglematchers",
+			"Comment": "1.6.0-24-gf8459f9",
+			"Rev": "f8459f92181409546d2762c9e9c4bedc23c92d76"
+		},
+		{
+			"ImportPath": "github.com/smartystreets/goconvey/convey",
+			"Comment": "1.6.2-19-gaf8e7d5",
+			"Rev": "af8e7d560364b90f732a1d119d17b5506e50447d"
+		},
+		{
+			"ImportPath": "github.com/smartystreets/goconvey/convey/gotest",
+			"Comment": "1.6.2-19-gaf8e7d5",
+			"Rev": "af8e7d560364b90f732a1d119d17b5506e50447d"
+		},
+		{
+			"ImportPath": "github.com/smartystreets/goconvey/convey/reporting",
+			"Comment": "1.6.2-19-gaf8e7d5",
+			"Rev": "af8e7d560364b90f732a1d119d17b5506e50447d"
 		}
 	]
 }

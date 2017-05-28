@@ -5,6 +5,7 @@ import (
 	"github.com/astaxie/beego"
 	"strconv"
     "os"
+	"fmt"
 )
 
 func main() {
@@ -14,7 +15,8 @@ func main() {
 	} else {
 		port, err := strconv.Atoi(os.Getenv("PORT"))
         if err == nil {
-                beego.HttpPort = port
+				fmt.Println(port)
+                beego.BConfig.Listen.HTTPPort = port
         }
 	}
 	beego.Run()
