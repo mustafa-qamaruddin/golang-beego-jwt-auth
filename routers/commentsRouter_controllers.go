@@ -7,6 +7,22 @@ import (
 
 func init() {
 
+	beego.GlobalControllerRouter["passapp-engine-api/controllers:AccessController"] = append(beego.GlobalControllerRouter["passapp-engine-api/controllers:AccessController"],
+		beego.ControllerComments{
+			Method: "Post",
+			Router: `/`,
+			AllowHTTPMethods: []string{"post"},
+			MethodParams: param.Make(),
+			Params: nil})
+
+	beego.GlobalControllerRouter["passapp-engine-api/controllers:AccessController"] = append(beego.GlobalControllerRouter["passapp-engine-api/controllers:AccessController"],
+		beego.ControllerComments{
+			Method: "GetAll",
+			Router: `/`,
+			AllowHTTPMethods: []string{"get"},
+			MethodParams: param.Make(),
+			Params: nil})
+
 	beego.GlobalControllerRouter["passapp-engine-api/controllers:JWTController"] = append(beego.GlobalControllerRouter["passapp-engine-api/controllers:JWTController"],
 		beego.ControllerComments{
 			Method: "Post",

@@ -31,6 +31,11 @@ func init() {
 				&controllers.UserController{},
 			),
 		),
+		beego.NSNamespace("/access",
+			beego.NSInclude(
+				&controllers.AccessController{},
+			),
+		),
 	)
 
 	beego.AddNamespace(ns)
