@@ -42,11 +42,13 @@ func verify(tokenString string) bool {
 		return []byte(beego.AppConfig.String("HMACKEY")), nil
 	})
 
-	if claims, ok := token.Claims.(jwt.MapClaims); ok && token.Valid {
-		fmt.Println(claims["uid"], claims["nbf"])
+	if err != nil {
+		panic(err)
+	}
+
+	if claims, ok := token.Claims.(jwt.MapClaims); ok && token.Valid && claims != nil {
 		return true
 	} else {
-		fmt.Println(err)		
 		return false
 	}
 }
