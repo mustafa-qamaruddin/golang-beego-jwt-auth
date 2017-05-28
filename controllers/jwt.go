@@ -3,7 +3,6 @@ package controllers
 import (
 	"encoding/json"
 	"passapp-engine-api/models"
-
 	"github.com/astaxie/beego"
 )
 
@@ -21,7 +20,7 @@ type JWTController struct {
 func (j *JWTController) Post() {
 	var user models.User
 	json.Unmarshal(j.Ctx.Input.RequestBody, &user)
-	token := models.AddToken(user)
+	token := models.AddToken(user, j.Ctx.Input.Domain())
 	j.Data["json"] = map[string]string{"token" :token}
 	j.ServeJSON()
 }

@@ -5,17 +5,35 @@ import (
 	"time"
 	"github.com/dgrijalva/jwt-go"
 	"github.com/astaxie/beego"
+	"crypto/md5"
+	"io"
+	"strconv"
+	"fmt"
 )
 
 func init() {
 }
 
-func AddToken(u User) string {
+func AddToken(u User, d string) string {
+	fmt.Println(u.Username)
+	// get user id
+	var uid int = 31 // @todo u.Username
+	// current timestamp
+	currentTimestamp := time.Now().UTC().Unix()
+	var ttl int64 = 3600
+	// md5 of sub & iat
+	h := md5.New()
+	io.WriteString(h, strconv.Itoa(uid))
+	io.WriteString(h, strconv.FormatInt(int64(currentTimestamp), 10))
 	// Create a new token object, specifying signing method and the claims
 	// you would like it to contain.
 	token := jwt.NewWithClaims(jwt.SigningMethodHS256, jwt.MapClaims{
-		"uid": u.Username,
-		"nbf": time.Date(2015, 10, 10, 12, 0, 0, 0, time.UTC).Unix(),
+		"sub": uid,
+		"iat": currentTimestamp,
+		"exp": currentTimestamp + ttl,
+		"nbf": currentTimestamp,
+		"iss": d,
+		"jti": h.Sum(nil),
 	})
 
 	// Sign and get the complete encoded token as a string using the secret
