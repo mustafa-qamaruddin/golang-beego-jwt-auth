@@ -11,7 +11,7 @@ var (
 
 func init() {
 	AccessList = make(map[string]*Access)
-	u := Access{"user_11111", "1234", "9876", "1495982544", "true"}
+	u := Access{"access_11111", "1234", "9876", "1495982544", "true"}
 	AccessList["user_11111"] = &u
 }
 
@@ -19,7 +19,7 @@ type Access struct {
 	Id       string
 	APID string `valid:"Required;Numeric";json:"ap_id"`
 	PassID string `valid:"Required;Numeric";json:"pass_id"`
-	Timestamp string `valid:"Required;Numeric;Length(11)";json:"timestamp"`
+	Timestamp string `valid:"Required;Numeric;Length(10)";json:"timestamp"`
 	Access string `valid:"Required;Match(/^true|false$/)";json:"access"`
 }
 

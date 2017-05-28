@@ -5,6 +5,17 @@
 	"order": [],
 	"folders": [
 		{
+			"id": "d54700fc-f59d-c41d-c6e3-fb026f5524b5",
+			"name": "Access",
+			"description": "",
+			"order": [
+				"f5c6516e-f8e4-65fa-54af-e6e30fe5a19f",
+				"fb91e7a8-8818-cd61-70df-42573f00f5f8",
+				"8bd56c75-be63-94a5-1372-56b25360448c"
+			],
+			"owner": "1567530"
+		},
+		{
 			"id": "f2706a7c-2714-7d64-ef57-5f1de8012584",
 			"name": "JWT",
 			"description": "",
@@ -136,6 +147,27 @@
 			"rawModeData": "{\n\t\"Username\": \"astaxie\",\n    \"Password\": \"password\",\n    \"Profile\": {\n      \"Gender\": \"Female\",\n      \"Age\": 25,\n      \"Address\": \"United Kingdom\",\n      \"Email\": \"astaxie@gmail.com\"\n    }\n}"
 		},
 		{
+			"id": "8bd56c75-be63-94a5-1372-56b25360448c",
+			"headers": "Authorization: {{token}}\n",
+			"url": "{{url}}/access",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "76be6d54-0dd8-26fb-18ed-d1f19350bf7a",
+			"data": null,
+			"dataMode": "params",
+			"name": "{{url}}/access",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1496002567161,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "d54700fc-f59d-c41d-c6e3-fb026f5524b5"
+		},
+		{
 			"id": "93a26b56-9560-ce0c-f526-50308de22b60",
 			"headers": "",
 			"url": "{{url}}/user/login?username=qamaruddin@mQuBits.com&password=password",
@@ -190,6 +222,47 @@
 			"description": "",
 			"collectionId": "76be6d54-0dd8-26fb-18ed-d1f19350bf7a",
 			"responses": []
+		},
+		{
+			"id": "f5c6516e-f8e4-65fa-54af-e6e30fe5a19f",
+			"headers": "Authorization: {{token}}\n",
+			"url": "{{url}}/access",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "76be6d54-0dd8-26fb-18ed-d1f19350bf7a",
+			"data": [],
+			"dataMode": "raw",
+			"name": "{{url}}/access",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1495998247121,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "d54700fc-f59d-c41d-c6e3-fb026f5524b5",
+			"rawModeData": "{\n\t\"ap_id\":\"12345\",\n\t\"pass_id\":\"4567\",\n\t\"timestamp\":\"1495998223\",\n\t\"access\":\"true\"\n}"
+		},
+		{
+			"id": "fb91e7a8-8818-cd61-70df-42573f00f5f8",
+			"headers": "Authorization: {{token}}\n",
+			"url": "{{url}}/access",
+			"preRequestScript": null,
+			"pathVariables": {},
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1496002279388,
+			"name": "{{url}}/access ( validation )",
+			"description": "",
+			"collectionId": "76be6d54-0dd8-26fb-18ed-d1f19350bf7a",
+			"responses": [],
+			"rawModeData": "{\n}"
 		}
 	]
 }
