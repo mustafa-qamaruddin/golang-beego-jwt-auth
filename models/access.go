@@ -17,8 +17,8 @@ func init() {
 
 type Access struct {
 	Id       string
-	APID string `valid:"Required;Numeric";json:"ap_id"`
-	PassID string `valid:"Required;Numeric";json:"pass_id"`
+	ApId string `json:"ap_id";valid:"Required;Numeric"`
+	PassId string `json:"pass_id";valid:"Required;Numeric"`
 	Timestamp string `valid:"Required;Numeric;Length(10)";json:"timestamp"`
 	Access string `valid:"Required;Match(/^true|false$/)";json:"access"`
 }

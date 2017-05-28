@@ -44,7 +44,7 @@ func (c *AccessController) Post() {
 			errorsList[err.Key] = err.Message
 			log.Println(err.Key, err.Message)
 		}
-		c.Ctx.Output.SetStatus(400)
+		c.Ctx.Output.SetStatus(422)
 		c.Data["json"] = map[string]map[string]string{"errors" :errorsList}
 		c.ServeJSON()
 	}
