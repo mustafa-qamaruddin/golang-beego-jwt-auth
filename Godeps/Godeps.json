@@ -57,6 +57,45 @@
 			"ImportPath": "github.com/dgrijalva/jwt-go",
 			"Comment": "v3.0.0-19-g5ce015f",
 			"Rev": "5ce015f7b5c6a994b0db6f07883d38572c28a422"
+		},
+		{
+			"ImportPath": "github.com/go-bongo/bongo",
+			"Comment": "v0.10.4-18-gb7a1380",
+			"Rev": "b7a1380f4885ba5672a6d62b1ec453129d11a017"
+		},
+		{
+			"ImportPath": "github.com/maxwellhealth/go-dotaccess",
+			"Rev": "ae070a2d2a38fd7233e255ded21fb26fe36b4796"
+		},
+		{
+			"ImportPath": "github.com/oleiade/reflections",
+			"Comment": "0.1.2-12-g0e86b3c",
+			"Rev": "0e86b3c98b2ff33e30c85cfe97d9a63d439fe7eb"
+		},
+		{
+			"ImportPath": "gopkg.in/mgo.v2",
+			"Comment": "r2016.08.01-5-g3f83fa5",
+			"Rev": "3f83fa5005286a7fe593b055f0d7771a7dce4655"
+		},
+		{
+			"ImportPath": "gopkg.in/mgo.v2/bson",
+			"Comment": "r2016.08.01-5-g3f83fa5",
+			"Rev": "3f83fa5005286a7fe593b055f0d7771a7dce4655"
+		},
+		{
+			"ImportPath": "gopkg.in/mgo.v2/internal/json",
+			"Comment": "r2016.08.01-5-g3f83fa5",
+			"Rev": "3f83fa5005286a7fe593b055f0d7771a7dce4655"
+		},
+		{
+			"ImportPath": "gopkg.in/mgo.v2/internal/sasl",
+			"Comment": "r2016.08.01-5-g3f83fa5",
+			"Rev": "3f83fa5005286a7fe593b055f0d7771a7dce4655"
+		},
+		{
+			"ImportPath": "gopkg.in/mgo.v2/internal/scram",
+			"Comment": "r2016.08.01-5-g3f83fa5",
+			"Rev": "3f83fa5005286a7fe593b055f0d7771a7dce4655"
 		}
 	]
 }
