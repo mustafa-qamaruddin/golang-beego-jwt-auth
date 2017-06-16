@@ -16,8 +16,8 @@ func init() {
 
 func AddToken(u User, d string) string {
 	fmt.Println(u.Username)
-	// get user id
-	var uid int = 31 // @todo u.Username
+	// user id
+	var uid int = 0
 	// current timestamp
 	currentTimestamp := time.Now().UTC().Unix()
 	var ttl int64 = 3600
