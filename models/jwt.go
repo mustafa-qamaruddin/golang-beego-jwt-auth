@@ -14,6 +14,11 @@ import (
 func init() {
 }
 
+/**
+ * @todo authenticate username & password using OAuth Grant Type Password
+ * @todo add scopes and permissions to JWt
+ * @todo open public apis only to unauthorized clients using Grant Type Client
+ */
 func AddToken(u User, d string) string {
 	fmt.Println(u.Username)
 	// user id
